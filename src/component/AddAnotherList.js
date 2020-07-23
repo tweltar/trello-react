@@ -31,6 +31,7 @@ const AddAnotherList = ({addNewList}) => {
                     status: 1
                 });
                 addNewList(list.data);
+                setIsDisplaying(false);
             } catch (error) {
                 console.log(error);
             }
