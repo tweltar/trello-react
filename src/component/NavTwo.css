@@ -1,0 +1,73 @@
+.board-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.board-details-one {
+    display: flex;
+    flex-direction: row;
+    align-items: inherit;
+}
+
+.board-title {
+    font-size: 110%; 
+    font-weight: bolder; 
+    color: white;
+    padding: 0 10px;
+}
+
+.board-details-one > p {
+    color: white;
+}
+
+.board-details-two {
+    display: flex;
+    flex-direction: row;
+}
+
+.board-details-one > *,
+.board-details-two > * {
+    margin: 0 2px;
+}
+
+.free {
+    padding: 1px 5px;
+    border-radius: 15px;
+    font-size: x-small;
+    margin-left: 8px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    font-size: 80%;
+    padding: 5px 8px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 200ms ease-out;
+}
+
+.detail:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.detail > i {
+    font-size: 98%;
+    margin-right: 8px;
+}
+
+.boardmembers {
+    display: flex;
+    flex-direction: row;
+    margin: 0 2px;
+}
+
+.boardmembers > *:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
