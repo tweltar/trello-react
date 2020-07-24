@@ -1,0 +1,51 @@
+.update-List {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 310px;
+    height: fit-content;
+    padding: 15px 0;
+    position: absolute;
+    top: 40px;
+    left: 230px;
+    border: 1px solid rgba(190, 190, 190, 0.5);
+    background-color: white;
+    border-radius: 3px;
+    z-index: 2;
+}
+
+.update-List p {
+    font-size: 95%;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.update-List > a {
+    font-size: 97%;
+    padding: 6px 15px;
+}
+
+.update-List > a:hover {
+    background-color: rgba(190, 190, 190, 0.2);
+}
+
+.list-separator {
+    width: 280px;
+    height: 1px;
+    margin: 10px 15px;
+    background-color: rgba(190, 190, 190, 0.5);
+}
+
+.p-div {
+    position: relative;
+}
+
+.update-List i {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    cursor: pointer;
+    transform: rotate(45deg);
+    font-size: 105%;
+    z-index: 3;
+}
