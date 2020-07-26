@@ -1,0 +1,90 @@
+
+.card-editor-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: flex-start;
+}
+
+.card-editor {
+    display: flex;
+    flex-direction: row;
+    z-index: 3;
+    position: absolute;
+}
+
+.card-editor-col1,
+.card-editor-col2 {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+}
+
+.card-editor-col1 > input {
+    width: 250px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 10px;
+    padding-bottom: 70px;
+    font-size: 95%;
+    font-weight: 600;
+    outline: none;
+    border: none;
+}
+
+.card-editor-col1 > div {
+    display: flex;
+    flex-direction: row;
+}
+.card-editor-col1 a {
+    width: 70px;
+    font-size: 95%;
+    color: white;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 4px;
+    background-color: rgba(17, 158, 17, 0.9);
+}
+
+.card-editor-col1 a:hover {
+    background-color: rgba(23, 185, 23, 0.8);
+}
+
+.card-editor-col1 i {
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 5px;
+    cursor: pointer;
+    transform: rotate(45deg);
+    font-size: 120%;
+}
+
+.card-editor-col1 i:hover {
+    font-size: 130%;
+    color: white;
+}
+
+.card-editor-col2 > a {
+    width: fit-content;
+    padding: 6px 10px;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 95%;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    transition: all 100ms ease-in-out;
+}
+
+.card-editor-col2 > a:hover {
+    margin-left: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card-editor-col2 i {
+    color: white;
+    margin-right: 5px;
+}
