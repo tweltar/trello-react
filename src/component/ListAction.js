@@ -6,11 +6,10 @@ const ListAction = ({ isListActionOpen, setIsListActionOpen, archieveList, delet
     const myRef = useRef(null);
 
     const clickOutsideListAction = (e) => {
-        if (myRef.current.contains(e.target)) {
-        } else {
+        if (!myRef.current.contains(e.target)) {
             setIsListActionOpen(false);
         }
-    }
+    };
 
     useEffect(() => {
         isListActionOpen ? 
@@ -20,7 +19,7 @@ const ListAction = ({ isListActionOpen, setIsListActionOpen, archieveList, delet
         return () => {
             document.removeEventListener('click', clickOutsideListAction);
         }
-    }, [isListActionOpen]);
+    }, [clickOutsideListAction, isListActionOpen]);
 
     return (
         <div className="update-List" ref={myRef}>

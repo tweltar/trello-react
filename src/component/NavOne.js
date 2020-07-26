@@ -1,5 +1,6 @@
 import React from 'react';
 import './NavOne.css';
+import profile from "../assets/ttb.jpg";
 
 const NavOne = () => {
     return (
@@ -20,7 +21,7 @@ const NavOne = () => {
                 <a href="#" className="nav"><i className="fas fa-plus"></i></a>
                 <a href="#" className="nav"><i className="fas fa-info-circle"></i></a>
                 <a href="#" className="nav"><i className="far fa-bell"></i></a>
-                <img src="../src/assets/ttb.jpg" alt="img" id="profile" />
+                <img src={profile} alt="Profile" id="profile" />
             </div>
         </header>
     )
