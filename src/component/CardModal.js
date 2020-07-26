@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './CardModal.css';
 import Axios from 'axios';
+import profile from "../assets/ttb.jpg";
 
 const CardModal = ({cardId, cardTitle, setCardTitle, updateCardTitle}) => {
 
@@ -20,7 +21,7 @@ const CardModal = ({cardId, cardTitle, setCardTitle, updateCardTitle}) => {
 
     useEffect(() => {
         fetchCard();
-    }, []);
+    }, [fetchCard]);
 
     return ( 
         <div>
@@ -117,7 +118,7 @@ const CardModal = ({cardId, cardTitle, setCardTitle, updateCardTitle}) => {
                             </div>  
                             <div className="activity-body">
                                 <div className="comment-section">
-                                    <img src="././asserts/ttb.jpg" alt="profile" id="profile" />
+                                    <img src={profile} alt="profile" id="profile" />
                                     <textarea className="comment" placeholder="Write a comment..." onChange={e => setComment(e.target.value)}>{comment}</textarea>
                                 </div>
                                 <div className="activities"></div>

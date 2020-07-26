@@ -17,7 +17,7 @@ const Wrapper = () => {
 
     const fetchLists = async () => {
         try {
-            const res = await Axios.get("/lists");
+            const res = await Axios.get("/list");
             setLists(res.data);
         } catch (error) {
             setLists([]);
@@ -50,10 +50,9 @@ const Wrapper = () => {
     }, []);
 
     return (
-        <section className="content">
+        <section className="Wrapper content">
             {
-                lists && lists.map(l => l.status !== 2 && 
-                    <CardModalProvider value={{ ShowCardModalFunction: setShowCardModal, CardIdFunction: setCardId, Id: cardId }} key={l.id}>
+                lists && lists.filter(l => l.status === 1).map(l => <CardModalProvider value={{ ShowCardModalFunction: setShowCardModal, CardIdFunction: setCardId, Id: cardId }} key={l.id}>
                         <List list={l} setLists={setLists} setShowModal={setShowModal} setCardTitle={setCardTitle} setRect={setRect} />
                     </CardModalProvider> )
             }
